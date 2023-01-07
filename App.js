@@ -38,9 +38,9 @@ form.addEventListener("submit", async (e) => {
         //   console.log(calories)
         let respons = await fetch(`https://api.spoonacular.com/mealplanner/generate?apiKey=${APIKEY}&timeFrame=day&targetCalories=${calories}`);
         let mealData = await respons.json();
-        console.log(mealData);
-        create_cards(mealData)
-        document.querySelector(".welcome").style.display = "none"
+         console.log(mealData);
+         create_cards(mealData)
+        // document.querySelector(".welcome").style.display = "none"
     }
     else {
         alert("please fill the all details first ");
