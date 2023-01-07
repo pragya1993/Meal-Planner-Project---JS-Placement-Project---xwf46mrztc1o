@@ -88,12 +88,7 @@ h2{
     /* background-blend-mode: lighten;  */
     background-color: rgb(199, 14, 14);
 }
-.card_body{
-    /* display: flex; */
-    /* justify-content: center; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
+
 .inputfield:hover{
     opacity: .6;
     color: black;
@@ -194,5 +189,5 @@ th{
     text-transform: uppercase;
     padding: .5rem;
     background:linear-gradient(rgb(113, 146, 36),rgb(122, 45, 45));
-    background-blend-mode: lighten;
+
 }
