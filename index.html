@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="unit.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- nav bar section -->
+            <nav class="nav_bar flex">
+                    <h2 class="web_name">Meal Planner</h2>
+            </nav>
+        </div>
+
+        <div class="main">
+            <!-- User form Section -->
+            <form class="user_form" action="">
+                <div class="form_row flex">
+                    <input type="text" name="height" id="height" class="inputfield" placeholder="Enter Height (CM)"
+                        required>
+                    <input type="text" name="Weight" id="weight" class="inputfield" placeholder="Enter Weight (KG)"
+                        required>
+                    <input type="text" name="age" id="age" class="inputfield" placeholder="Enter Age" required>
+                </div>
+                <div class="form_row flex">
+                    <select name="gender" id="gender" class="inputfield">
+                        <option value=""> Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <select name="activity_lavel" id="activity__level" class="inputfield">
+                        <option value=""> Activity Lavel</option>
+                        <option value="1.375">Light</option>
+                        <option value="1.55">Moderate</option>
+                        <option value="1.725">Active</option>
+                    </select>
+                </div>
+                <div class="form_row flex">
+                    <button type="submit" class="inputfield" id="submit_btn">Generate Meal</button>
+                </div>
+            </form>
+            <div class="main_container flex">
+                <!-- <div class="primary ">
+                 
+                </div> -->
+                <div class="display">
+                    <!-- card render section -->
+                    <div class="card_recipies_section ">
+                        <div class="meal_plan flex" id="meal_card">
+
+                        </div>
+                        <!-- <div id="recipies_sec"></div> -->
+                    </div>
+                    <!-- <div id="recipies_sec"></div> -->
+                </div>
+                <!-- recipies display section -->
+                <div id="recipies_sec"></div>
+            </div>
+
+        </div>
+        <script src="App.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+        
+</body>
+
+</html>
